@@ -1,0 +1,22 @@
+GET http://localhost:3000/api/customers HTTP/1.1
+
+
+###
+POST http://localhost:3000/api/customers HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "山本"
+}
+
+###
+PUT http://localhost:3000/api/customers/3 HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "橋本2"
+}
+
+###
+DELETE http://localhost:3000/api/customers/3 HTTP/1.1
+Content-Type: application/json
